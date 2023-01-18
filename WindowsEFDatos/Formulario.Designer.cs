@@ -56,7 +56,7 @@
             // 
             // numCap
             // 
-            this.numCap.Location = new System.Drawing.Point(99, 98);
+            this.numCap.Location = new System.Drawing.Point(103, 103);
             this.numCap.Name = "numCap";
             this.numCap.Size = new System.Drawing.Size(100, 20);
             this.numCap.TabIndex = 2;
@@ -166,7 +166,7 @@
             // 
             // txtID
             // 
-            this.txtID.Location = new System.Drawing.Point(99, 72);
+            this.txtID.Location = new System.Drawing.Point(103, 72);
             this.txtID.Name = "txtID";
             this.txtID.Size = new System.Drawing.Size(100, 20);
             this.txtID.TabIndex = 15;
