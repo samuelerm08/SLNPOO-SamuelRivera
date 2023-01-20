@@ -32,8 +32,7 @@ namespace WindowsEFDatos
 
         private void Insert(object sender, EventArgs e)
         {
-            LineaAerea a = new LineaAerea();
-
+            LineaAerea a = new LineaAerea();            
             foreach (var item in context.LineasAereas)
             {
                 if (comboLineas.Text == item.Nombre)
