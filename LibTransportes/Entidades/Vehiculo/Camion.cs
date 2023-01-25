@@ -38,7 +38,7 @@ namespace LibTransportes.Entidades
 
         public override string ToString()
         {
-            return base.Imprimir() + $"\nTipoCarga: {TipoCarga}\n" +
+            return base.ToString() + $"\nTipoCarga: {TipoCarga}\n" +
                                      $"Capacidad: {Capacidad}";
         }
     }

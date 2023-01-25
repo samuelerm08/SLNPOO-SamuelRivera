@@ -21,7 +21,7 @@ namespace LibTransportes.Entidades
         public abstract string Acelerar();
         public abstract string Frenar();      
         
-        public virtual string Imprimir()
+        public virtual string ToString()
         {
             return $"Marca: {Marca}\n" +
                    $"Modelo: {Modelo}\n" +

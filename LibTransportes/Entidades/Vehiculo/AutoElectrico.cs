@@ -31,7 +31,7 @@ namespace LibTransportes.Entidades
 
         public override string ToString()
         {
-            return base.Imprimir() + $"\nPorcentaje de Bateria: {PorcentajeBateria}\n" +
+            return base.ToString() + $"\nPorcentaje de Bateria: {PorcentajeBateria}\n" +
                                      $"Autonomia: {Autonomia}";
         }
     }
