@@ -20,7 +20,7 @@ namespace PresentacionVehiculos
         private void MostrarCamion(object sender, EventArgs e)
         {
             var r = new Remolque() { Estado = "Conectado" };
-            var c = new Camion("Ford", "350", "1970", "Arena", 1000)
+            var c = new Camion("Ford", "350", 1970, "Arena", 1000)
             {
                 Remolque = r
             };

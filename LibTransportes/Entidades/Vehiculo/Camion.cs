@@ -10,12 +10,12 @@ namespace LibTransportes.Entidades
 {
     public class Camion : Vehiculo
     {
-        public Camion(string marca, string modelo, string año, string tipoCarga, float capacidad) : base(marca, modelo, año)
+        public Camion(string marca, string modelo, int año, string tipoCarga, float capacidad) : base(marca, modelo, año)
         {
             TipoCarga = tipoCarga;
             Capacidad = capacidad;
         }
-
+        
         public string TipoCarga { get; set; }
         public float Capacidad { get; set; }
         public Remolque Remolque { get; set; }
@@ -38,11 +38,8 @@ namespace LibTransportes.Entidades
 
         public override string ToString()
         {
-            return $"Marca: {Marca}\n" +
-                   $"Modelo: {Modelo}\n" +
-                   $"Año: {Año}\n" +
-                   $"Tipo de Carga: {TipoCarga}\n" +
-                   $"Capacidad: {Capacidad}\n";
+            return base.Imprimir() + $"\nTipoCarga: {TipoCarga}\n" +
+                                     $"Capacidad: {Capacidad}";
         }
     }
 }

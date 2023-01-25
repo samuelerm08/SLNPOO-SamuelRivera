@@ -8,7 +8,7 @@ namespace LibTransportes.Entidades
 {
     public abstract class Vehiculo
     {
-        protected Vehiculo(string marca, string modelo, string año)
+        protected Vehiculo(string marca, string modelo, int año)
         {
             Marca = marca;
             Modelo = modelo;
@@ -17,8 +17,15 @@ namespace LibTransportes.Entidades
 
         public string Marca { get; set; }
         public string Modelo { get; set; }
-        public string Año { get; set; }
+        public int Año { get; set; }
         public abstract string Acelerar();
-        public abstract string Frenar();        
+        public abstract string Frenar();      
+        
+        public virtual string Imprimir()
+        {
+            return $"Marca: {Marca}\n" +
+                   $"Modelo: {Modelo}\n" +
+                   $"Año: {Año}";
+        }
     }
 }

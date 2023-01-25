@@ -10,7 +10,7 @@ namespace LibTransportes.Entidades
 {
     public class AutoElectrico : Vehiculo
     {
-        public AutoElectrico(string marca, string modelo, string año, int porcentajeBateria, int autonomia) : base(marca, modelo, año)
+        public AutoElectrico(string marca, string modelo, int año, int porcentajeBateria, int autonomia) : base(marca, modelo, año)
         {
             PorcentajeBateria = porcentajeBateria;
             Autonomia = autonomia;
@@ -31,11 +31,8 @@ namespace LibTransportes.Entidades
 
         public override string ToString()
         {
-            return $"Marca: {Marca}\n" +
-                   $"Modelo: {Modelo}\n" +
-                   $"Año: {Año}\n" +
-                   $"Porcentaje de Bateria: {PorcentajeBateria}\n" +
-                   $"Autonomia: {Autonomia}";
+            return base.Imprimir() + $"\nPorcentaje de Bateria: {PorcentajeBateria}\n" +
+                                     $"Autonomia: {Autonomia}";
         }
     }
 }
